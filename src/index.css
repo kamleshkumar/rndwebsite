@@ -344,3 +344,21 @@ footer {
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border-color);
 }
+
+.outerbewrap { position: relative; bottom:0px; width: 100%; z-index:0; }   
+ .bewarp {position:absolute; width:100%; text-align:center; z-index:0; bottom:25px;  border-radius: 6px;}
+ .bb_resbox {width: initial !important; display:inline-block; text-align:center; padding: 10px 10px 20px 10px; }
+ .bb_resbox label { color: #ffffff;     font-size: 17px; height: initial; }
+ .bb_resbox input[type="text"] {margin: 0px; font-size:14px; min-width: 100%; line-height: 26px; box-sizing: border-box; height: initial;} 
+ .bb_resbox select { line-height: 26px; height: initial;}
+ .bb_resbox button.ui-datepicker-trigger { margin: 0px;    padding: 0px;}
+ input[type="button"]#bb_resBtn, input#bb_resBtn { margin-bottom:0px; -webkit-appearance: none;border-radius: 0;  line-height: 26px; font-weight: bold;}   
+ #bb_resBtn:hover{color: #ffffff  !important; background: #0000 !important; border: 1px solid #c9a84c !important;  }
+ .ui-datepicker .ui-datepicker-title select {  display:inline-block;  max-width: 76px;    min-width: 76px;}  
+ /*.ui-datepicker .ui-datepicker-header {    padding: .2em 40px;}
+ .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {    font-size: 15px; display: inline-block; width: 76px;}*/
+ @media only screen and (max-width: 752px) {.bewarp { position:static; min-width: 100%; }}
+ @media only screen and (max-width: 415px) {
+ .bb_resbox p { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;box-sizing: border-box; }
+ .bb_resbox input[type="text"]{    width: 100%; }
+ }

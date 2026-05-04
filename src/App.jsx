@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import { supabase } from './supabaseClient'
+import BookingWidget from './BookingWidget';
+
 
 // --- Mock Data Setup ---
 // We use this initial data structure before connecting to the backend (Supabase).
@@ -207,13 +209,13 @@ export default function App() {
           </div>
           <h1 className="reveal delay-100">A Palace for Your Soul</h1>
           <p className="reveal delay-200">Experience royal heritage and deep serenity 4 km from the sacred Baba Baidyanath Dham.</p>
-          <div className="reveal delay-200" style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap'}}>
+          {/* <div className="reveal delay-200" style={{display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap'}}>
             <a href="#contact" className="btn btn-primary">Book Your Stay</a>
             <a href="#rooms" className="btn btn-primary" data-button="outline">Explore Rooms</a>
-          </div>
+          </div> */}
         </div>
       </header>
-
+      <BookingWidget />
       {/* Ticker */}
       <div className="ticker-wrap">
         <div className="ticker">
